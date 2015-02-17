@@ -32,7 +32,7 @@ namespace XNAInvaders
         //TODO: Add multiple invaders here
         private int loopNum = 0;
         
-        public List<Bullet> bullets = new List<Bullet>(); 
+        public static List<Bullet> bullets = new List<Bullet>(); 
 
 
         public Game1()
@@ -90,7 +90,7 @@ namespace XNAInvaders
                 base.Initialize();
         }
 
-       
+
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -98,7 +98,7 @@ namespace XNAInvaders
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            
+
             // Pass keyboard state to Global so we can use it everywhere
             Global.keys = Keyboard.GetState();
 
@@ -111,36 +111,42 @@ namespace XNAInvaders
             {
                 invaders[iUpdate].Update();
 
-                
+
             }
-            int x = 0;
-            while (x < bullets.Count)
+
+            for (int x = 0; x < bullets.Count; x++)
             {
-                loopNum = 0;
-                while (loopNum < invaders.Count)
+
+                for (int loopNum = 0; loopNum < invaders.Count; loopNum++)
                 {
-                    if (((bullets[x].position.X > (invaders[loopNum].position.X)) &&
-                         (bullets[x].position.X < (invaders[loopNum].position.X))) &&
-                        (invaders[loopNum].position.Y < (invaders[loopNum].position.Y)))
+
+                    if(Collision(bullets[x].position,bullets[x].position,bullets[x].texture,invaders[loopNum].position,invaders[loopNum].position,invaders[loopNum].texture))
                     {
-                        invaders.RemoveAt(loopNum);
-                        theBullet.Reset();
-                        break;
+                        invaders[loopNum].Reset();
+                        Bullet.RemoveBullet();
                     }
-                    loopNum++;
                 }
-                x++;
             }
-            thePlayer.Update(gameTime);
-            
+                thePlayer.Update(gameTime);
 
 
-            base.Update(gameTime);
+
+                base.Update(gameTime);
+            }
+        public bool Collision(Vector2 x0, Vector2 y0, Texture2D texture0, Vector2 x1, Vector2 y1, Texture2D texture1)
+        {
+
+
+
+            if (x0.X > x1.X + texture1.Width || x0.X + texture0.Width < x1.X || y0.Y > y1.Y + texture1.Height || y0.Y + texture0.Height < y1.Y)
+                return false;
+            else
+                return true;
+
         }
 
-       
 
-        
+
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>

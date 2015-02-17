@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -6,7 +7,7 @@ namespace XNAInvaders
 {
     public class Bullet
     {
-        public Boolean isFired = true;
+        public static Boolean isFired = false;
         public Vector2 position;
         Vector2 velocity;
         public Texture2D texture;
@@ -22,29 +23,41 @@ namespace XNAInvaders
         public void Init()
         {
             velocity.Y = 5f;
-            
+            isFired = true;
         }
 
         public void Update()
         {
-            
-            position -= velocity;
-           
-              //  if (position.Y < 0)
-              //  {
-               //     theGame1.RemoveBullet();
-                //}
-                
-            
-            
 
-            
+            position -= velocity;
+
+            if (position.Y < 0)
+            {
+                RemoveBullet();
+                isFired = false;
+            }
 
         }
 
+        public static void RemoveBullet()
+            {
+                for (int i = 0; i < Game1.bullets.Count; i++)
+                {
+                    Game1.bullets.RemoveAt(i);
+                   
+                }
+            }
+
+            
+
+        
+
         public void Draw()
         {
-            Global.spriteBatch.Draw(texture,position,Color.White);
+            if(isFired)
+            {
+                Global.spriteBatch.Draw(texture, position, Color.White);
+            }
         }
 
         public void Reset()

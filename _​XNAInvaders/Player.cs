@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using XNAInvaders;
 namespace XNAInvaders
 {
     class Player
@@ -14,7 +14,7 @@ namespace XNAInvaders
         Invader theInvader;
         Bullet theBullet;
         EnemyBullet theEnemyBullet;
-        Game1 theGame1;
+        
 
         public Player()
         {
@@ -23,7 +23,7 @@ namespace XNAInvaders
             theBullet = new Bullet(position);
             theEnemyBullet = new EnemyBullet();
             theInvader = new Invader();
-            theGame1 = new Game1();
+            
         }
 
         public void Init()
@@ -37,7 +37,6 @@ namespace XNAInvaders
            
             // Assume player is not moving
             velocity.X = 0;
-            FireBullet();
             // Alter velocity when keys are pressed
             if (Global.keys.IsKeyDown(Keys.Left)) velocity.X = -10.0f;
             if (Global.keys.IsKeyDown(Keys.Right)) velocity.X = 10.0f;
@@ -47,7 +46,7 @@ namespace XNAInvaders
             // If x position is out of bounds, "undo" velocity
             if ((position.X < 100) || (position.X > Global.width - texture.Width - 100))
                 position -= velocity;
-            if (Global.keys.IsKeyDown(Keys.Space))
+            if (Global.keys.IsKeyDown(Keys.Space) && Game1.bullets.Count < 1)
             {
                 
                     //theBullet.isFired = false;
@@ -67,9 +66,9 @@ namespace XNAInvaders
 
         void FireBullet()
         {
-           Bullet newBullet = new Bullet(position);
+           Bullet newBullet = new Bullet(position - new Vector2(0f,20f));
            newBullet.Init();
-           theGame1.bullets.Add(newBullet);
+           Game1.bullets.Add(newBullet);
         }
     }
 }
