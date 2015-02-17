@@ -15,3 +15,20 @@ c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders
 c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\obj\x86\Debug\_​XNAInvaders.exe
 c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\obj\x86\Debug\_​XNAInvaders.pdb
 C:\Users\Breandan Wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\GameThumbnail.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\background.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\blue_invader.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\bullet.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\enemy_ship.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\green_invader.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\red_invader.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\scanlines.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\shield.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\ship.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\yellow_invader.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\GameThumbnail.xnb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\_​XNAInvaders.exe
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\_​XNAInvaders.pdb
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\obj\x86\Debug\_​XNAInvaders.csprojResolveAssemblyReference.cache
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\obj\x86\Debug\_​XNAInvaders.exe
+C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\obj\x86\Debug\_​XNAInvaders.pdb

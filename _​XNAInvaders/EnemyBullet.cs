@@ -4,51 +4,54 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace XNAInvaders
 {
-    class EnemyBullet
+    public class EnemyBullet
     {
-        private int currentBullets;
+        
 
         public Vector2 position;
         private Vector2 velocity;
-        public Boolean enemyIsFired;
-        private Texture2D texture;
+        public Boolean IsFired;
+        public Texture2D texture;
 
         private Game1 theGame1;
 
-        public EnemyBullet()
+        public EnemyBullet(Vector2 _position)
         {
+            IsFired = false;
             texture = Global.content.Load<Texture2D>("bullet");
-            init();
+            Init();
+            position = _position;
         }
 
-        public void init()
+        public void Init()
         {
-            
-            enemyIsFired = false;
-            theGame1 = new Game1();
+            IsFired = true;
         }
 
         public void Reset()
         {
-            currentBullets = 0;
-            enemyIsFired = false;
+            
+            IsFired = false;
         }
         public void Update()
         {
-            
-                if (enemyIsFired && currentBullets <= 1)
-                {
-                    velocity.Y = 5f;
-                    position += velocity;
-                    currentBullets = 1;
-                    if (position.Y < Global.width)
+            velocity.Y = 5f;
+            position += velocity;
+            for (int i = 0; i < Game1.enemybullets.Count; i++)
+            {
+          
+                    
+                    if (position.Y > Global.height)
                     {
-                        Reset();
-                    }
+                        
+                        Game1.enemybullets.RemoveAt(i);
+                       
+                  }
 
                 }
-            
-        }
+            }
+
+        
         public void Draw()
         {
             Global.spriteBatch.Draw(texture,position,Color.White);

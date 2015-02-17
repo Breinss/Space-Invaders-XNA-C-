@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2015-02-11T09:22:35.9405388+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2015-02-17T10:54:28+01:00</Time>
     </Item>
     <Item>
       <Source>blue_invader.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\blue_invader.xnb</Output>
-      <Time>2015-02-11T09:22:35.9415102+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\blue_invader.xnb</Output>
+      <Time>2015-02-17T10:54:30+01:00</Time>
     </Item>
     <Item>
       <Source>bullet.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\bullet.xnb</Output>
-      <Time>2015-02-11T09:22:35.9425097+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\bullet.xnb</Output>
+      <Time>2015-02-17T10:54:30+01:00</Time>
     </Item>
     <Item>
       <Source>enemy_ship.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\enemy_ship.xnb</Output>
-      <Time>2015-02-11T09:22:35.9455096+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\enemy_ship.xnb</Output>
+      <Time>2015-02-17T10:54:34+01:00</Time>
     </Item>
     <Item>
       <Source>green_invader.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\green_invader.xnb</Output>
-      <Time>2015-02-11T09:22:35.9465096+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\green_invader.xnb</Output>
+      <Time>2015-02-17T10:54:38+01:00</Time>
     </Item>
     <Item>
       <Source>red_invader.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\red_invader.xnb</Output>
-      <Time>2015-02-11T09:22:35.9475175+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\red_invader.xnb</Output>
+      <Time>2015-02-17T10:54:38+01:00</Time>
     </Item>
     <Item>
       <Source>scanlines.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\scanlines.xnb</Output>
-      <Time>2015-02-11T09:22:35.9485104+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\scanlines.xnb</Output>
+      <Time>2015-02-17T10:54:42+01:00</Time>
     </Item>
     <Item>
       <Source>shield.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\shield.xnb</Output>
-      <Time>2015-02-11T09:22:35.9505103+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\shield.xnb</Output>
+      <Time>2015-02-17T10:54:44+01:00</Time>
     </Item>
     <Item>
       <Source>ship.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2015-02-11T09:22:35.9365096+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\ship.xnb</Output>
+      <Time>2015-02-17T10:54:44+01:00</Time>
     </Item>
     <Item>
       <Source>yellow_invader.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\yellow_invader.xnb</Output>
-      <Time>2015-02-11T09:22:35.9385108+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\yellow_invader.xnb</Output>
+      <Time>2015-02-17T10:54:46+01:00</Time>
     </Item>
     <Item>
       <Source>GameThumbnail.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Breandan Wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\GameThumbnail.xnb</Output>
-      <Time>2015-02-11T19:57:09.5831488+01:00</Time>
+      <Output>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\GameThumbnail.xnb</Output>
+      <Time>2015-02-17T10:54:36+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -107,10 +107,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Breandan Wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvadersContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Breandan Wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Breandan Wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Breandan Wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvaders\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvadersContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvaders\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -139,7 +139,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-02-10T14:18:31.4651698+01:00</Value>
+        <Value>2015-02-17T19:50:21.2843543+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

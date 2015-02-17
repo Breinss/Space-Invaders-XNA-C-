@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Bullet.cs" />
     <Compile Include="EnemyBullet.cs" />
+    <Compile Include="EnemyShip.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Invader.cs" />
     <Compile Include="Player.cs" />
@@ -92,6 +93,7 @@
     <ProjectReference Include="..\_​XNAInvadersContent\_​XNAInvadersContent.contentproj">
       <Name>_​XNAInvadersContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

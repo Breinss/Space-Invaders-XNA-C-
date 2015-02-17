@@ -20,7 +20,7 @@ namespace XNAInvaders
         private string randomTexture;
         private Game1 theGame1;
         private EnemyBullet theEnemyBullet;
-       
+        public int shootChance;
 
         public Invader()
         {
@@ -31,7 +31,7 @@ namespace XNAInvaders
         public void init()
         {
             rnd = new Random(Guid.NewGuid().GetHashCode());
-            
+            shootChance = 10;
             int randomTex = Random(1, 5);
             if (randomTex == 1)
             {
@@ -61,32 +61,37 @@ namespace XNAInvaders
       
         public void Update()
         {
-            
-            
-            
-                //if (rightWall)
-                //{
-                //    velocity.X = 3f;
-                //    position.X += velocity.X;
-                //}
-                //if (leftWall)
-                //{
-                //    velocity.X = 3f;
-                //    position.X -= velocity.X;
-                //}
-                //if (position.X >= Global.width - 40)
-                //{
-                //    rightWall = false;
-                //    leftWall = true;
-                //    position.Y += velocity.Y;
-                //}
-                //if (position.X <= Global.width - Global.width)
-                //{
-                //    leftWall = false;
-                //    rightWall = true;
-                //    position.Y += velocity.Y;
-                //}
-            
+
+
+
+            if (rightWall)
+            {
+                velocity.X = 2f;
+                position.X += velocity.X;
+            }
+            if (leftWall)
+            {
+                velocity.X = 2f;
+                position.X -= velocity.X;
+            }
+            if (position.X >= Global.width - 40)
+            {
+                rightWall = false;
+                leftWall = true;
+                position.Y += velocity.Y;
+            }
+            if (position.X <= Global.width - Global.width)
+            {
+                leftWall = false;
+                rightWall = true;
+                position.Y += velocity.Y;
+            }
+            if (((float)Random(1,1000) / 10 <= .2f && Game1.enemybullets.Count <= 1))
+            {
+                EnemyBullet newBullet = new EnemyBullet(position + new Vector2(0f, 14f));
+                newBullet.Init();
+                Game1.enemybullets.Add(newBullet);
+            }
 
         }
         public void Draw()

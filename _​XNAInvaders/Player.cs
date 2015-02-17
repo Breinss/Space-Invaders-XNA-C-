@@ -7,7 +7,7 @@ namespace XNAInvaders
 {
     class Player
     {
-        public Vector2 position;
+        public static Vector2 position;
         Vector2 velocity;
         Texture2D texture;
 
@@ -21,7 +21,6 @@ namespace XNAInvaders
             texture = Global.content.Load<Texture2D>("ship");
             Init();
             theBullet = new Bullet(position);
-            theEnemyBullet = new EnemyBullet();
             theInvader = new Invader();
             
         }

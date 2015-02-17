@@ -39,7 +39,7 @@ namespace XNAInvaders
 
         }
 
-        public static void RemoveBullet()
+        public void RemoveBullet()
             {
                 for (int i = 0; i < Game1.bullets.Count; i++)
                 {

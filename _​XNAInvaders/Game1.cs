@@ -27,12 +27,16 @@ namespace XNAInvaders
         public int nInvaders = 15;
         private int invaderSize;
 
+        public List<EnemyShip> enemyships = new List<EnemyShip>();
+        public int maxShip = 0;
+
         public int nShield = 3;
         List<Shield> shields = new List<Shield>(); 
         //TODO: Add multiple invaders here
-        private int loopNum = 0;
+        
         
         public static List<Bullet> bullets = new List<Bullet>(); 
+        public static List<EnemyBullet> enemybullets = new List<EnemyBullet>();
 
 
         public Game1()
@@ -62,7 +66,6 @@ namespace XNAInvaders
             // Create and Initialize game objects
             thePlayer = new Player();
             theInvader = new Invader();
-            theShield = new Shield();
             //Create and Initialize invader
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -71,7 +74,7 @@ namespace XNAInvaders
             scanlines = Content.Load<Texture2D>("scanlines");
             
 
-            for (int iInvader = 0; iInvader <= nInvaders; iInvader++)
+            for (int i = 0; i <= nInvaders; i++)
             {
                 theInvader = new Invader();
                 theInvader.init();
@@ -79,12 +82,17 @@ namespace XNAInvaders
                 invaderSize = invaders.Count;    
             }
 
-            for (int iShields = 0; iShields <= nShield; iShields++)
+            for (int i = 0; i <= nShield; i++)
             {
-               theShield = new Shield();
+               Shield theShield = new Shield(new Vector2(Global.width/4*i + 90 , Global.height - 100));;
                theShield.init();
                shields.Add(theShield);
-
+            }
+            for (int i = 0; i < 1; i++)
+            {
+                EnemyShip newShip = new EnemyShip(new Vector2(Player.position.X, Global.height / 8 - 65));
+                newShip.Init();
+                enemyships.Add(newShip);
             }
             
                 base.Initialize();
@@ -103,16 +111,29 @@ namespace XNAInvaders
             Global.keys = Keyboard.GetState();
 
             // Update the game objects
-            for (int iBullet = 0; iBullet < bullets.Count; iBullet++)
+            for (int i = 0; i < bullets.Count; i++)
             {
-                bullets[iBullet].Update();
+                bullets[i].Update();
             }
-            for (int iUpdate = 0; iUpdate < invaderSize; iUpdate++)
+            for (int i = 0; i < invaderSize; i++)
             {
-                invaders[iUpdate].Update();
-
-
+                invaders[i].Update();
             }
+            for (int i = 0; i < shields.Count; i++)
+            {
+                shields[i].Update();
+            }
+            for (int i=0; i < enemybullets.Count; i++)
+            {
+                enemybullets[i].Update();
+            }
+            for (int i = 0; i < enemyships.Count; i++)
+            {
+                enemyships[i].Update();
+            }
+
+            
+
 
             for (int x = 0; x < bullets.Count; x++)
             {
@@ -123,10 +144,47 @@ namespace XNAInvaders
                     if(Collision(bullets[x].position,bullets[x].position,bullets[x].texture,invaders[loopNum].position,invaders[loopNum].position,invaders[loopNum].texture))
                     {
                         invaders[loopNum].Reset();
-                        Bullet.RemoveBullet();
+                        bullets[x].RemoveBullet();
+                        break;
                     }
                 }
             }
+            for (int x = 0; x < bullets.Count; x++)
+            {
+                for (int loopNum = 0; loopNum < enemyships.Count; loopNum++)
+                {
+
+                    if (Collision(bullets[x].position, bullets[x].position, bullets[x].texture, enemyships[loopNum].position, enemyships[loopNum].position, enemyships[loopNum].texture))
+                    {
+                        enemyships[loopNum].shipHp--;
+                        bullets[x].RemoveBullet();
+                        if (enemyships[loopNum].shipHp <= 0)
+                        {
+                            enemyships.RemoveAt(loopNum);
+                        }
+                        break;
+                    }
+                }
+            }
+            for (int x = 0; x < enemybullets.Count; x++)
+            {
+
+                for (int loopNum = 0; loopNum < shields.Count; loopNum++)
+                {
+
+                    if (Collision(enemybullets[x].position, enemybullets[x].position, enemybullets[x].texture, shields[loopNum].position, shields[loopNum].position, shields[loopNum].texture))
+                    {
+                        shields[loopNum].shieldHp--;
+                        enemybullets.RemoveAt(x);
+                        if (shields[loopNum].shieldHp <= 0)
+                        {
+                            shields.RemoveAt(loopNum);
+                        }
+                        break;
+                    }
+                }
+            }
+           
                 thePlayer.Update(gameTime);
 
 
@@ -160,18 +218,26 @@ namespace XNAInvaders
             // Draw the game objects
             thePlayer.Draw();
 
-            for (int iInvader = 0; iInvader < invaderSize; iInvader++)
+            for (int i = 0; i < invaderSize; i++)
             {
-                invaders[iInvader].Draw();
+                invaders[i].Draw();
             }
 
-            for (int iShields = 0; iShields < shields.Count; iShields++)
+            for (int i = 0; i < shields.Count; i++)
             {
-                shields[iShields].Draw();
+                shields[i].Draw();
             }
-            for (int iBullet = 0; iBullet < bullets.Count; iBullet++)
+            for (int i = 0; i < bullets.Count; i++)
             {
-                bullets[iBullet].Draw();
+                bullets[i].Draw();
+            }
+            for (int i = 0; i < enemybullets.Count; i++)
+            {
+                enemybullets[i].Draw();
+            }
+            for (int i = 0; i < enemyships.Count; i++)
+            {
+                enemyships[i].Draw();
             }
             spriteBatch.Draw(scanlines, Global.screenRect, Color.White);
             spriteBatch.End();
