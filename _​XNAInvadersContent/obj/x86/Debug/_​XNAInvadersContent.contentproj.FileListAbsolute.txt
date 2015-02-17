@@ -1,2 +1,0 @@
-c:\users\breandan wehmuller\documents\visual studio 2013\Projects\​XNAInvaders\​XNAInvaders\_​XNAInvadersContent\obj\x86\Debug\_​XNAInvadersContent.contentprojResolveAssemblyReference.cache
-C:\Users\BW\Documents\GitHub\Space-Invaders-XNA-C-\_​XNAInvadersContent\obj\x86\Debug\_​XNAInvadersContent.contentprojResolveAssemblyReference.cache
